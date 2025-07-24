@@ -22,6 +22,16 @@ const http=require('http');
 
  const server=http.createServer((req, res)=>{
  console.log(req); 
+ console.log(req.url, req.method, req.headers);
+
+//  Part	     Meaning
+// req.url  	  Kaunsa page/browser request kar raha hai
+// req.method	  Request type (GET, POST, etc.)
+// req.headers	  Request ki extra info (browser, content, cookies, etc.)
+ 
+
+
+
  process.exit();
 //  🔹 Ye line jab chalegi to Node.js ka program wahi pe turant band ho jayega, chahe uske baad aur code ho — wo execute nahi hoga.
  });
